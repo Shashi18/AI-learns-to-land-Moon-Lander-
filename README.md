@@ -9,15 +9,13 @@ Crossover: Single Crossover/ Uniform Crossover seems to work quite well.
 Elitism fails for this project. Hence, I moved ahead wtih a random set of parents between 10 to 40 to next generation to keep a healthy 
 variation.
 
-Hey fellas,
-This time I have partially solved the Gym'sLunarLander v2 problem using the Deep Genetic Algorithm. Why partially?
-
-Well, the average score means between 180 to 200. The best score crosses 200 for a good number of times. Median score dips to negative 'sometimes'. But the landing of the lander is great and might even get claps from NASA. I am kidding.
-
-UPDATE: Model has crossed 200 median scores!! Celebrations
-UPDATE: I accidentally chose the SoftMax activation function every layer. I corrected that and now only the hidden layers have ReLU and the output layer has Softmax activation function.
+The designed Model has crossed 200 median scores!! Celebrations
+Update: I accidentally chose the SoftMax activation function every layer. I corrected that and now only the hidden layers have ReLU and the output layer has Softmax activation function.
 
 Here's the GIF of multiple landings of our Lander.
+
+![alt text](https://1.bp.blogspot.com/-Lokb2RhmSmc/XfMTqSjntRI/AAAAAAAAE3E/cSfWXM8C0W8mKNd7-cHYkHHxHIbjEvlngCLcBGAsYHQ/s1600/WORK.gif)
+
 
 In my previous post, I solved the CartPole environment using a genetic algorithm. However, in the Cartpole environment, we have low complexity, space, and states. Also, Catpole begins with a state of maximum reward i.e the rendering always starts from the perpendicular position which is what we want out the environment to do. So basically, our algorithm already begins with the best reward and hence, requires fewer iterations to find. In Lunar Lander, the best reward state has to be discovered by our algorithm. Most of the time the Lander starts from same position but rarely does it return to the landing pad which eventually returns the best rewards. With this project, I came to realize that for the genetic methodology, if you have a large space, you would require more exploration, more population and elitism won't work.
 

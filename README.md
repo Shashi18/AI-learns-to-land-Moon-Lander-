@@ -21,14 +21,20 @@ In my previous post, I solved the CartPole environment using a genetic algorithm
 
 Why elitism won't work?
 
-Bill Gates' son is an elite person. Bill Gates isn't. How?
+Just as an example:
+  Bill Gates' son is an elite person. Bill Gates isn't. How?
 Bill Gates or Steve Jobs have seen worst as well the best of their times. They have seen a failure of the product as well as the success of the company. They have in relative more experience. On the other hand, Bill Gates' son has seen money from the very beginning. He/She might not know the real value of hardship as none of them would have to toil like Jobs or Gates. So overall, we don't just need 'What to do' which is the policy of elites. We also need 'What not to do' which is the policy of non-elites. The experience of non-elites helps us to filter the elites' ones as well.
 
 PS. Thomas Alva Edison was a damn nonelite person for sure as he discovered 10000 ways that don't work.
 
 The result of our algorithm?
 
+![alt text](https://1.bp.blogspot.com/-3kHbOyb-ieM/XfM9spTxUlI/AAAAAAAAE4I/ttiPadXOX003ptA520M4sRsfljoK6hmHgCLcBGAsYHQ/s1600/s.png)
+
 New Output with correct activation function (ReLU in the hidden layers and Softmax for the output layers ):
+
+![alt text](https://1.bp.blogspot.com/-kIcHCV3Oems/XfWNcsLe_aI/AAAAAAAAE5Q/BHrYKB1IoQYMhS2irSBHYcyyv62nfrT2ACLcBGAsYHQ/s1600/Capture.PNG)
+
 The Green colored plot is the median of our population. The Blue colored plot is the maximum of each generation.
 
 The tweaks in GA relies on the basics.
@@ -39,6 +45,8 @@ Changes: Earlier I had mistakenly set Softmax for every layer. This time the inp
 
 The Black plot is the plot of the old 'best' scores of each generation. The Red plot is of the new. It can be seen that ReLU had more trouble in maintaining consistency initially with the best scores but grasped with the higher scores fastly. The dark blue plot is of the new model and the cyan plot if of old model median scores. The new model converges fastly than the old version. Until 100 generations as in the plot, the scores were pretty much the same but after that, the slope bumps up.
 
-
+![alt text](https://1.bp.blogspot.com/-ieSxoV8zmIY/XfWS66WpWiI/AAAAAAAAE5w/7hI9INJP1KU8dtqM5h26crHiOBYkyk5pwCLcBGAsYHQ/s1600/222.png)
 
 Have a look at the best score a.k.a History in the above screenshot. We have a consistent above 300 scores. The average score is also above 200 i.e. 287.79
+
+Cheers!
